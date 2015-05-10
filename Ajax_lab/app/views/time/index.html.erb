@@ -1,0 +1,13 @@
+<html>
+<body>
+<h1>Ajax Lab</h1>
+<div id="time">
+
+  The current time is <%= Time.now  %>
+
+</div>
+
+<%= button_to 'Update Time', time_path, remote: true, :method => :get %>
+
+</body>
+</html>
